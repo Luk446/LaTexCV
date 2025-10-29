@@ -1,164 +1,147 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Robotics & ML Engineering CV (UK) — ModernCV
-% - Clean, two-page, ATS-friendly (no photo/icons)
-% - Modular sections for quick tailoring per job
-% - Uses UK conventions (no DOB/photo; concise contact line)
+% LUKE EDGECOMBE - Robotics & ML Engineering CV (UK)
+% Tailored for industry placement applications (2025)
+% Clean, ATS-friendly, two-page structure
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 
 % ---------- THEME ----------
-\moderncvstyle{classic}          % classic is clean + readable
-\moderncvcolor{blue}             % blue, black, grey, purple, ...
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc} % use T1 encoding for scalable fonts
-\usepackage{lmodern}    % Latin Modern: scalable replacement for CM
-\usepackage{microtype}  % improves justification; needs scalable fonts
+% Use T1 encoding and scalable Latin Modern fonts so pdfTeX can do font expansion
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[scale=0.92]{geometry}
-\setlength{\hintscolumnwidth}{2.6cm} % date/label column width
-\setlength{\makecvtitlenamewidth}{12cm}
+\setlength{\hintscolumnwidth}{2.6cm}
 
-% ---------- QUICK TUNING (uncomment to squeeze to 2 pages) ----------
-%\renewcommand{\familydefault}{\sfdefault}
-%\AtBeginDocument{\recomputelengths} % recompute lengths after font change
-%\setlength{\parskip}{2pt}
-%\setlength{\itemsep}{2pt}
-
-% ---------- PERSONAL DATA ----------
-\name{Your Firstname}{Your Lastname}
-\title{Robotics \& Machine Learning Engineer}            % optional
-\address{City, United Kingdom}{ }                       % city-only for UK CVs
-\phone[mobile]{+44 7xxx xxx xxx}
-\email{youremail@domain.com}
-\social[linkedin]{linkedin.com/in/your-handle}
-\social[github]{github.com/your-handle}
-
-% Optionally: concise portfolio link
-%\homepage{your-portfolio.dev}
+% ---------- PERSONAL DETAILS ----------
+\name{Luke}{Edgecombe}
+\title{Robotics and Machine Learning Engineer}
+\address{Edinburgh / Dundee, United Kingdom}{ }
+\phone[mobile]{07465433217}
+\email{luke.edgecomb2@gmail.com}
+\social[linkedin]{linkedin.com/in/luke-edgecombe333}
+\social[github]{github.com/Luk446}
 
 \begin{document}
 \makecvtitle
 
 % =========================================================
-% SUMMARY (About Me) — one concise paragraph
+% ABOUT ME
 % =========================================================
-\section{Summary}
-Robotics \& ML engineer focused on control, motion, and perception. Experienced building data pipelines and training neural networks for inverse kinematics, calibration and forecasting; comfortable across Python/PyTorch/ROS and mechatronics. Seeking roles in robotics, autonomous systems, or ML for controls where I can deliver reliable, testable systems end-to-end.
+\section{About Me}
+Robotics and machine learning engineer with a background in biomedical and mechanical systems. Currently pursuing an MSc in Robotics with Industrial Application at Heriot-Watt University, focusing on AI for control of soft robotics. Experienced with machine learning pipelines, CUDA-based neural network tuning, and control system design. Highly motivated to contribute to real-world robotics applications through innovative, data-driven solutions.
 
 % =========================================================
-% CORE SKILLS — technical only, grouped for skim-reading
-% =========================================================
-\section{Core Skills}
-\cvitem{Programming}{Python, C/C++, MATLAB}
-\cvitem{ML / DL}{PyTorch, scikit-learn, data pipelines, hyperparameter tuning (Ray Tune), MLOps basics}
-\cvitem{Robotics}{Kinematics/Dynamics, Control (PID/LQR), ROS, simulation, calibration}
-\cvitem{Tooling}{Git, Linux, Docker, VS Code, NumPy/Pandas, Jupyter}
-\cvitem{Hardware}{Microcontrollers, basic electronics, 3D printing, CAD (SolidWorks)}
-
-% =========================================================
-% EDUCATION — add context + skills/examples as bullets
+% EDUCATION
 % =========================================================
 \section{Education}
-\cventry{2024}{MSc Robotics}{University Name}{City, UK}{}{
-\textbf{Key Modules:} Control Systems, Robot Dynamics, ML, Motion Planning.\\[2pt]
-\textbf{Highlights:}
+
+\cventry{2025--2027}{MSc Robotics with Industrial Application}{Heriot-Watt University}{Edinburgh, UK}{}{
+\textbf{Key Focus Areas:} Control Systems, Machine Learning, Robot Kinematics, Motion Planning.\\[2pt]
+\textbf{Current Project:}
 \begin{itemize}
-  \item Designed and tuned PID/LQR controllers for a 3-DOF arm; closed-loop error reduced by 18\%.
-  \item Built neural IK with PyTorch; reached $<$4\% MAPE on real robot data.
+  \item Designing and implementing an MLPR (multi-layer perceptron regressor) with CUDA acceleration for real-time control of soft robotic actuators.
+  \item Exploring inverse kinematics approximation and model tuning for compliant robotic systems.
 \end{itemize}
 }
 
-\cventry{2023}{BEng Mechanical Engineering (1st/2:1)}{University Name}{City, UK}{}{
-\textbf{Key Modules:} Mechatronics, CAD, Systems \& Control, Thermofluids.\\[2pt]
-\textbf{Highlights:}
+\cventry{2019--2023}{BEng Biomedical Engineering (First Class Honours)}{University of Dundee}{Dundee, UK}{}{
+\textbf{Key Modules:} Software Applications for Biomedical Engineering, Medical Instrumentation, Electronics and Instrumentation, Biomechanics and Biomaterials.\\[2pt]
+\textbf{Honours Projects:}
 \begin{itemize}
-  \item Led autonomous rover project (ROS + SLAM); obstacle avoidance at 10\,Hz on embedded compute.
-  \item Team design project improved component MTBF by 20\% via FMECA-driven redesign.
+  \item Designed and 3D printed a prosthetic hand using EMG control; achieved first-class project grade.
+  \item Collaborated with Össur on a Windows-based application for prosthetic control and patient interfacing.
+  \item Developed a laparoscopic surgery training tool with real-time feedback (graded B).
 \end{itemize}
+\textbf{Awards:} Open Prize for Biomedical Engineering (2022) • Consistent 1st-class average (Years 2-4)
 }
 
 % =========================================================
-% SELECTED PROJECTS — aim sentence + metric-driven bullets
+% PROJECTS
 % =========================================================
 \section{Selected Projects}
-\cvitem{Neural Inverse Kinematics (PyTorch)}{%
-Estimated joint angles from $(x,y,z)$ using an MLP; exported for real-time inference.
+
+\cvitem{Soft Robotics Control (MSc)}{
 \begin{itemize}
-  \item Tuned with Ray Tune; best model $\downarrow$MAPE to 3.7\% on held-out trajectories.
-  \item Wrote reproducible training scripts (configurable seeds, dataset splits, metrics).
+  \item Developing AI-driven control for soft robotic actuators using PyTorch and CUDA-accelerated MLPR.
+  \item Implementing inverse kinematics prediction model; paper in preparation with King’s College London.
 \end{itemize}
 }
-\cvitem{Calibration \& Control Tooling}{%
-Toolkit to characterise actuator backlash and auto-tune PID gains.
+
+\cvitem{Automated Endo-Robotic Solution (Undergraduate)}{
 \begin{itemize}
-  \item Reduced steady-state error by 25\%; generated PDF reports from logged experiments.
-  \item Implemented unit/integration tests; CLI packaging for lab reuse.
+  \item Team project designing an automated system for minimally invasive tasks.
+  \item Responsible for mechanical design, ML integration, and sensor calibration.
 \end{itemize}
 }
-\cvitem{Autonomous Rover (ROS)}{%
-Raspberry Pi + lidar rover with mapping and waypoint following.
+
+\cvitem{Upper Limb Prosthesis (Össur Collaboration)}{
 \begin{itemize}
-  \item Implemented SLAM; validated in Gazebo before hardware bring-up.
-  \item Designed 3D-printed chassis; CAD/BOM released on GitHub.
+  \item Designed the mechanical housing and contributed to GUI development for EMG-based prosthesis.
+  \item Improved signal reliability and patient comfort through ergonomic design.
 \end{itemize}
 }
 
 % =========================================================
-% EXPERIENCE — keep impact bullets; list all or only relevant
+% TECHNICAL SKILLS
+% =========================================================
+\section{Technical Skills}
+\cvitem{Programming}{Python, C++, MATLAB}
+\cvitem{Machine Learning}{PyTorch, scikit-learn, CUDA optimisation, data preprocessing, Ray Tune}
+\cvitem{Robotics}{Kinematics, Control (PID/LQR), ROS, simulation}
+\cvitem{Design Tools}{SolidWorks (CSWA certified), Autodesk Inventor, KiCad}
+\cvitem{Other Tools}{Git, Linux, LaTeX, VS Code}
+\cvitem{Lab Skills}{Instrumentation, signal analysis, system integration}
+
+% =========================================================
+% EXPERIENCE
 % =========================================================
 \section{Experience}
-\cventry{2024}{Robotics Intern}{Company Name}{City, UK}{}{
+
+\cventry{2022--2023}{Class Representative}{University of Dundee}{Dundee, UK}{}{
 \begin{itemize}
-  \item Prototyped vision-assisted pick-and-place; boosted grasp success from 72\% to 88\%.
-  \item Containerised dev env (Docker) and CI tests; cut onboarding time by 50\%.
-\end{itemize}
-}
-\cventry{2022--2023}{Undergraduate Research Assistant}{University Lab}{City, UK}{}{
-\begin{itemize}
-  \item Analysed arm calibration datasets; identified bias sources and proposed compensation.
-  \item Co-authored internal tech report; presented results to cross-disciplinary team.
+  \item Acted as liaison between students and faculty to improve course delivery.
+  \item Led feedback sessions and collaborated with staff to resolve academic issues.
 \end{itemize}
 }
 
-% =========================================================
-% OPTIONAL: Relevant Experience (use when tailoring)
-% =========================================================
-%\section{Relevant Experience}
-%\cventry{2021}{Title}{Org}{City, UK}{}{Two or three bullets focused on what matters for THIS job.}
+\cventry{2018--2023}{Seasonal Roles – Hospitality \& Events}{Underbelly \& Assembly, Edinburgh Fringe}{Edinburgh, UK}{}{
+\begin{itemize}
+  \item Worked in box offices, bars, and front-of-house roles across multiple summers.
+  \item Developed teamwork, customer service, and organisational skills in fast-paced environments.
+\end{itemize}
+}
+
+\cventry{2016--2018}{Paper Delivery Assistant}{Local Distribution}{Dundee, UK}{}{
+\begin{itemize}
+  \item Managed early-morning routes; demonstrated reliability and independence.
+\end{itemize}
+}
 
 % =========================================================
-% CERTIFICATIONS — concise; technical only
-% =========================================================
-\section{Certifications}
-\cvitem{2024}{Deep Learning Specialization (Coursera)}
-\cvitem{2023}{MATLAB Associate Certification}
-
-% =========================================================
-% AWARDS & ACHIEVEMENTS
-% =========================================================
-\section{Awards \& Achievements}
-\cvitem{2023}{Winner — Robotics Hackathon (Uni)}
-\cvitem{2022}{Dean’s List / Scholarship (if applicable)}
-
-% =========================================================
-% VOLUNTEERING / SOCIETIES — can live under Experience if you prefer
+% VOLUNTEERING & SOCIETIES
 % =========================================================
 \section{Volunteering \& Societies}
-\cvitem{Robotics Society}{Built competition bots; mentored first-years on ROS basics.}
-\cvitem{STEM Outreach}{Delivered robotics workshops to schools (KS4/KS5).}
+\cvitem{STEM Ambassador}{Created educational resources for schools as part of the Ingenious Project to promote pathways into engineering.}
+\cvitem{Mountaineering Club}{Progressed from participant to instructor; led weekend expeditions focusing on safety and teamwork.}
+\cvitem{Engineering Society}{Organised workshops and project sessions to engage students in robotics applications.}
 
 % =========================================================
-% HOBBIES — keep it relevant/rounding (no soft skills claims)
+% CERTIFICATES & AWARDS
 % =========================================================
-\section{Hobbies}
-\cvitem{}{Guitar (signal chains, DSP pedals), 3D printing (rapid prototyping), distance running.}
+\section{Certificates \& Awards}
+\cvitem{2023}{CSWA – Certified SolidWorks Associate}
+\cvitem{2022}{Open Prize for Biomedical Engineering, University of Dundee}
+\cvitem{2022}{Certificate of Recognition – School of Science and Engineering}
+\cvitem{2021}{First Aid at Work (Ofqual Level 3)}
 
 % =========================================================
-% NOTES FOR TAILORING (comment out before exporting)
+% INTERESTS
 % =========================================================
-% - Maintain a "master CV"; comment out projects to fit 2 pages per job.
-% - Mirror vacancy keywords (ATS): e.g., "ROS2", "Gazebo", "Kalman", "C++17".
-% - Use UK spelling (optimised, modelling). Do not include photo, DOB, or full address.
-% - Export as PDF: Firstname_Lastname_CV.pdf
+\section{Interests}
+\cvitem{}{Mountain biking, bouldering, hiking • Reading and model kit building • Travel across Europe and outdoors exploration.}
 
 \end{document}

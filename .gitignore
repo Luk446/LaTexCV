@@ -1,0 +1,12 @@
+/build/*.aux
+/build/*.log
+/build/*.out
+/build/*.toc
+/build/*.fdb_latexmk
+/build/*gz
+/build/*.fls
+/build/*.synctex.gz
+
+
+
+!build/*.pdf

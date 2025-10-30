@@ -1,9 +1,7 @@
 %------------------ Class ------------------%
-
 \documentclass[a4paper,11pt]{article}
 
 %------------------ Packages ------------------%
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -18,20 +16,18 @@
 \usepackage[a4paper,margin=1.7cm]{geometry}
 
 %------------------ Formatting ------------------%
-
 \setlength{\parskip}{2pt}
 \setlength{\parindent}{0pt}
-\renewcommand{\baselinestretch}{0.97} % compress line spacing
+\renewcommand{\baselinestretch}{0.97}
 \titleformat{\section}{\large\bfseries\color{blue}}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}[]
-\setlist[itemize]{left=1.2em, itemsep=2pt, topsep=2pt} % tight bullet points
+\setlist[itemize]{left=1.2em, itemsep=2pt, topsep=2pt}
 
-% section title spacing
-\titlespacing*{\section}{0pt}{10pt plus 2pt minus 2pt}{8pt}  % tighter before/after sections
+% Section title spacing
+\titlespacing*{\section}{0pt}{10pt plus 2pt minus 2pt}{8pt}
 \titlespacing*{\subsection}{0pt}{8pt plus 1pt minus 1pt}{6pt}
 
 %------------------ Header ------------------%
-
 \begin{document}
 \begin{center}
     {\LARGE \textbf{Luke Edgecombe}} \\[4pt]
@@ -43,118 +39,108 @@
 \vspace{0.3cm}
 
 %========================================================%
-
 \section*{About Me}
-Robotics and machine-learning engineer with a background in biomedical engineering. I am currently studying for an \textbf{MSc in Robotics with Industrial Application} at Heriot-Watt University (expected 2027), focusing on end-to-end IoT systems, machine-learning theory, ROS programming and robot kinematics. My undergraduate thesis investigated automatic hyperparameter optimisation of an MLP regressor for a prototype soft medical robot. I am seeking a six-month industry placement where I can apply machine-learning and control skills to real robotic systems.
+Robotics and machine-learning engineer with a background in biomedical engineering. I am currently studying for an \textbf{MSc in Robotics with Industrial Application} at Heriot-Watt University (expected 2027), focusing on end-to-end IoT systems, ML theory, ROS programming, and robot kinematics. My undergraduate thesis explored automatic hyperparameter optimisation for an MLP regressor controlling a prototype soft medical robot. I am seeking a six-month industry placement to apply ML and control-systems expertise to real-world robotics challenges.
 
 %========================================================%
-
 \section*{Education}
 
 \textbf{MSc Robotics with Industrial Application} \hfill \textbf{2025--2027 (expected)}\\
-    \textit{Heriot-Watt University, Edinburgh, UK}
+\textit{Heriot-Watt University, Edinburgh, UK}
 \begin{itemize}
-    \item Current modules: End-to-end IoT systems for robotics, machine-learning theory, ROS programming, robot kinematics.
-    \item Building applied skills in robotics software stacks.
+    \item Current modules: End-to-End IoT Systems, Machine-Learning Theory, ROS Programming, and Robot Kinematics.
+    \item Developing applied skills in robotics software stacks and system integration.
 \end{itemize}
 
 \textbf{BEng Biomedical Engineering (First Class Honours)} \hfill \textbf{2019--2023}\\
 \textit{University of Dundee, Dundee, UK}
 \begin{itemize}
     \item Key modules: Software Applications for Biomedical Engineering, Medical Instrumentation, Electronics and Instrumentation, Biomechanics and Biomaterials.
-    \item \textbf{Final year thesis:} Designed and implemented automatic hyperparameter optimisation for an MLP regressor to control a prototype soft medical robotic system.
-    \item Other undergraduate projects:
-    \begin{itemize}
-        \item \textbf{Össur (industry-linked):} contributed to mechanical design and user-facing application work for an upper-limb prosthesis.
-        \item \textbf{Automated endo-robotic solution:} team project on an automated platform for endoscopic/minimally invasive tasks.
-        \item \textbf{3D-printed EMG prosthetic hand:} design and build of a functional prosthetic with limited materials.
-        \item \textbf{Laparoscopic training tool:} interactive system providing user feedback.
-    \end{itemize}
+    \item \textbf{Final-year thesis:} see project section \emph{(Automatic HPO for MLP Regressor in Soft Medical Robotics)}.
     \item \textbf{Award:} Open Prize for Biomedical Engineering (2022) \emph{(also issued as School of Science and Engineering Certificate of Recognition)}.
 \end{itemize}
 
 %========================================================%
-
 \section*{Selected Projects}
 
 \textbf{Automatic HPO for MLP Regressor in Soft Medical Robotics} \hfill \textit{Degree Thesis}
 \begin{itemize}
-    \item Implemented an MLP regressor mapping position inputs to actuation outputs for a soft-medical-robot prototype.
-    \item Designed and evaluated an automatic hyperparameter-optimisation pipeline that improved model accuracy and training efficiency under limited-data conditions.
+    \item Implemented an MLP regressor mapping position inputs to actuation outputs for a soft-robotics prototype.
+    \item Designed an automatic hyperparameter-optimisation pipeline improving model accuracy and training efficiency with limited data.
     \item Addressed real-world constraints including non-linear kinematics and small datasets.
 \end{itemize}
 
-\textbf{Össur Upper-Limb Prosthesis (Industry-linked)} \hfill \textit{Undergraduate project}
+\textbf{Össur Upper-Limb Prosthesis (Industry-Linked)} \hfill \textit{Undergraduate Project}
 \begin{itemize}
     \item Contributed to mechanical design and user-application development for an upper-limb prosthesis.
-    \item Focused on streamlining the mechatronic development process and improving patient interaction.
+    \item Focused on improving mechatronic design workflow and end-user interaction.
 \end{itemize}
 
-\textbf{Automated Endo-Robotic Solution} \hfill \textit{Undergraduate team project}
+\textbf{Automated Endo-Robotic Solution} \hfill \textit{Undergraduate Team Project}
 \begin{itemize}
-    \item Developed an automated robotic solution for minimally invasive tasks.
-    \item Led mechanical design choices and handled calibration and sensor integration.
+    \item Developed an automated robotic platform for minimally invasive tasks.
+    \item Led mechanical design and integrated calibration and sensor feedback systems.
 \end{itemize}
 
-\textbf{3D-Printed EMG Prosthetic Hand}
+\textbf{3D-Printed EMG Prosthetic Hand} \hfill \textit{Undergraduate Project}
 \begin{itemize}
     \item Designed and manufactured a low-cost prosthetic hand controlled using EMG signals.
-    \item Demonstrated practical application of biomedical-engineering and mechatronics principles.
+    \item Applied biomedical-engineering and embedded-system principles in a practical build.
+\end{itemize}
+
+\textbf{Laparoscopic Training Tool} \hfill \textit{Undergraduate Project}
+\begin{itemize}
+    \item Created an interactive laparoscopic-surgery training system providing user feedback.
+    \item Focused on interface design and mechanical responsiveness.
 \end{itemize}
 
 %========================================================%
-
 \section*{Technical Skills}
 
 \begin{tabular}{@{}ll}
-\textbf{Programming:} & Python, C++ (Arduino), C\#, MATLAB \\
-\textbf{ML / Data:} & PyTorch, Scikit-learn, hyperparameter optimisation, data processing \\
-\textbf{Robotics:} & ROS, kinematics, control systems (PID), IoT \\
+\textbf{Programming:} & Python, C++, C\#, MATLAB \\
+\textbf{ML / Data:} & PyTorch, scikit-learn, hyperparameter optimisation, data processing \\
+\textbf{Robotics:} & ROS, kinematics, control systems (PID), IoT integration \\
 \textbf{Design \& CAD:} & SolidWorks (CSWA), Autodesk Inventor, 3D printing \\
 \textbf{Other Tools:} & Git, Linux, LaTeX, VS Code
 \end{tabular}
 
 %========================================================%
-
 \section*{Experience}
 
 \textbf{Class Representative – University of Dundee} \hfill 2022--2023
 \begin{itemize}
-    \item Liaised between students and faculty to improve the delivery and organisation of engineering modules.
-    \item Collected and communicated student feedback, and helped resolve course-related concerns.
+    \item Liaised between students and faculty to improve delivery and organisation of engineering modules.
+    \item Gathered and presented student feedback, helping resolve course-related issues.
 \end{itemize}
 
-\textbf{Hospitality \& Events – Edinburgh Fringe (Underbelly, Assembly) and Various Restaurants} \hfill 2018--2023
+\textbf{Hospitality \& Events – Edinburgh Fringe (Underbelly, Assembly) \& Restaurants} \hfill 2018--2023
 \begin{itemize}
-    \item Performed box-office, FOH, kitchen, and bar roles in high-pressure, time-sensitive environments.
-    \item Developed strong teamwork, communication and reliability under peak demand.
+    \item Worked in box-office, FOH, kitchen, and bar roles in high-pressure, time-sensitive environments.
+    \item Developed teamwork, communication, and reliability under peak demand.
 \end{itemize}
-
-
 
 %========================================================%
-
 \section*{Volunteering \& Activities}
 
 \textbf{Retail Volunteer – Oxfam Shop} \hfill 1 year (during school)
 \begin{itemize}
-    \item Assisted with stock management, customer service and daily shop operations.
-    \item Developed teamwork and responsibility in a customer-facing environment.
+    \item Assisted with stock management, customer service, and daily operations.
+    \item Built teamwork and responsibility in a customer-facing environment.
 \end{itemize}
 
 \textbf{STEM Ambassador – University of Dundee Ingenious Project}
 \begin{itemize}
-    \item Produced outreach materials to promote engineering and STEM pathways to school pupils.
+    \item Produced outreach materials promoting engineering and STEM pathways to school pupils.
 \end{itemize}
 
 \textbf{Mountaineering \& Outdoor Clubs}
 \begin{itemize}
     \item Active member of mountaineering and mountain-biking societies.
-    \item Planned and led trips, emphasising safety, risk assessment and team communication.
+    \item Planned and led trips emphasising safety, risk assessment, and communication.
 \end{itemize}
 
 %========================================================%
-
 \section*{Certificates \& Awards}
 \begin{itemize}
     \item Open Prize for Biomedical Engineering, University of Dundee (2022) \textit{(also issued as School of Science and Engineering Certificate of Recognition)}
@@ -163,8 +149,7 @@ Robotics and machine-learning engineer with a background in biomedical engineeri
 \end{itemize}
 
 %========================================================%
-
 \section*{Interests}
-Mountain and road biking, electronics, bouldering, rope climbing and winter mountaineering.
+Mountain and road biking, electronics, bouldering, rope climbing, and winter mountaineering.
 
 \end{document}

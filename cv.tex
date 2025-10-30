@@ -27,6 +27,24 @@
 \titlespacing*{\section}{0pt}{10pt plus 2pt minus 2pt}{8pt}
 \titlespacing*{\subsection}{0pt}{8pt plus 1pt minus 1pt}{6pt}
 
+%------------------ PDF Export Settings ------------------%
+\usepackage{hyperref}
+\hypersetup{
+    pdfauthor={Luke Edgecombe},
+    pdftitle={Luke Edgecombe - CV},
+    pdfsubject={Curriculum Vitae - Robotics and Machine Learning Engineer},
+    pdfkeywords={Robotics, Machine Learning, Control Systems, Heriot-Watt, Engineering, Python, ROS, MLP, IoT},
+    pdfproducer={LaTeX with hyperref},
+    pdfcreator={pdflatex},
+    colorlinks=false,        % keep links hidden (already using hidelinks)
+    pdfborder={0 0 0}
+}
+
+% Optimize PDF size and compression
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
+
+
 %------------------ Header ------------------%
 \begin{document}
 \begin{center}
@@ -48,26 +66,42 @@ Robotics and machine-learning engineer with a background in biomedical engineeri
 \textbf{MSc Robotics with Industrial Application} \hfill \textbf{2025--2027 (expected)}\\
 \textit{Heriot-Watt University, Edinburgh, UK}
 \begin{itemize}
-    \item Current modules: End-to-End IoT Systems, Machine-Learning Theory, ROS Programming, and Robot Kinematics.
+    \item \textbf{Current modules:} End-to-End IoT Systems, Machine-Learning Theory, ROS Programming, and Robot Kinematics.
     \item Developing applied skills in robotics software stacks and system integration.
 \end{itemize}
 
-\textbf{BEng Biomedical Engineering (First Class Honours)} \hfill \textbf{2019--2023}\\
+\textbf{BEng Biomedical Engineering (First Class Honours)} \hfill \textbf{2021--2025}\\
 \textit{University of Dundee, Dundee, UK}
 \begin{itemize}
-    \item Key modules: Software Applications for Biomedical Engineering, Medical Instrumentation, Electronics and Instrumentation, Biomechanics and Biomaterials.
-    \item \textbf{Final-year thesis:} see project section \emph{(Automatic HPO for MLP Regressor in Soft Medical Robotics)}.
-    \item \textbf{Award:} Open Prize for Biomedical Engineering (2022) \emph{(also issued as School of Science and Engineering Certificate of Recognition)}.
+    \item \textbf{Key modules:} Software Applications for Biomedical Engineering, Medical Instrumentation, Electronics and Instrumentation, Biomechanics and Biomaterials.
+    \item \textbf{Final-year thesis:} Automatic HPO for MLP Regressor in Soft Medical Robotics.
+    \item \textbf{Award:} Open Prize for Biomedical Engineering (2022)
 \end{itemize}
 
 %========================================================%
 \section*{Selected Projects}
 
-\textbf{Automatic HPO for MLP Regressor in Soft Medical Robotics} \hfill \textit{Degree Thesis}
+\textbf{Automatic HPO for MLP Regressor in Soft Medical Robotics} \hfill \textit{Undergraduate Degree Thesis}
 \begin{itemize}
     \item Implemented an MLP regressor mapping position inputs to actuation outputs for a soft-robotics prototype.
     \item Designed an automatic hyperparameter-optimisation pipeline improving model accuracy and training efficiency with limited data.
     \item Addressed real-world constraints including non-linear kinematics and small datasets.
+\end{itemize}
+
+\textbf{Medical Image Classification} \hfill \textit{Postgraduate Team Project}
+\begin{itemize}
+    \item Classifying MRI images for identifying brain pathology.
+\end{itemize}
+
+\textbf{A-Star Path Planning} \hfill \textit{Postgraduate Project}
+\begin{itemize}
+    \item Developed path planning systems for virtual robotic systems using the A-star algorithm.
+\end{itemize}
+
+\textbf{ESP32 Cloud IoT Platform}
+\begin{itemize}
+    \item Communicate with an MQTT broker to stream environmental data.
+    \item Using node-red platform.
 \end{itemize}
 
 \textbf{Össur Upper-Limb Prosthesis (Industry-Linked)} \hfill \textit{Undergraduate Project}
@@ -82,17 +116,18 @@ Robotics and machine-learning engineer with a background in biomedical engineeri
     \item Led mechanical design and integrated calibration and sensor feedback systems.
 \end{itemize}
 
-\textbf{3D-Printed EMG Prosthetic Hand} \hfill \textit{Undergraduate Project}
+\textbf{3D-Printed EMG Prosthetic Hand} \hfill \textit{Undergraduate Team Project}
 \begin{itemize}
     \item Designed and manufactured a low-cost prosthetic hand controlled using EMG signals.
     \item Applied biomedical-engineering and embedded-system principles in a practical build.
 \end{itemize}
 
-\textbf{Laparoscopic Training Tool} \hfill \textit{Undergraduate Project}
+\textbf{Laparoscopic Training Tool} \hfill \textit{Undergraduate Team Project}
 \begin{itemize}
     \item Created an interactive laparoscopic-surgery training system providing user feedback.
     \item Focused on interface design and mechanical responsiveness.
 \end{itemize}
+
 
 %========================================================%
 \section*{Technical Skills}
@@ -108,13 +143,13 @@ Robotics and machine-learning engineer with a background in biomedical engineeri
 %========================================================%
 \section*{Experience}
 
-\textbf{Class Representative – University of Dundee} \hfill 2022--2023
+\textbf{Class Representative – University of Dundee} \hfill 2023--2025
 \begin{itemize}
     \item Liaised between students and faculty to improve delivery and organisation of engineering modules.
     \item Gathered and presented student feedback, helping resolve course-related issues.
 \end{itemize}
 
-\textbf{Hospitality \& Events – Edinburgh Fringe (Underbelly, Assembly) \& Restaurants} \hfill 2018--2023
+\textbf{Hospitality \& Events – Edinburgh Fringe (Underbelly, Assembly) \& Restaurants} \hfill 2018--2025
 \begin{itemize}
     \item Worked in box-office, FOH, kitchen, and bar roles in high-pressure, time-sensitive environments.
     \item Developed teamwork, communication, and reliability under peak demand.
@@ -143,7 +178,7 @@ Robotics and machine-learning engineer with a background in biomedical engineeri
 %========================================================%
 \section*{Certificates \& Awards}
 \begin{itemize}
-    \item Open Prize for Biomedical Engineering, University of Dundee (2022) \textit{(also issued as School of Science and Engineering Certificate of Recognition)}
+    \item Open Prize for Biomedical Engineering, University of Dundee (2022)
     \item CSWA – Certified SolidWorks Associate (2023)
     \item First Aid at Work (Ofqual Level 3)
 \end{itemize}
